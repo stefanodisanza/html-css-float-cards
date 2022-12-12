@@ -3,7 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     
+}
 
+.clearfix::after {
+	content: '';
+	display: table;
+	clear: both;
 }
 
 body{
@@ -24,11 +29,7 @@ body{
   
 
 
-.clearfix::after {
-	content: '';
-	display: table;
-	clear: both;
-}
+
 
 .container {
 	max-width: 100%;
@@ -37,15 +38,15 @@ body{
 	/* padding: 12px 0; */
 }
 
-.col {
+.card {
     background-color: black;
     color: white;
-	width: 33.33%;
-	float: left;
+	width: 33.33%
 }
 
 img{
     max-width: 100%;
+    float: left;
 }
 .card img {
 	height: 100px;
